@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #203750;
+    color: rgb(154, 167, 189);
+    /*for body*/
+}
+
+
+/*header*/
+.container {
+    max-width: 80vw;
+    height: 500vh;
+    margin: auto;
+    border-radius: 80px;
+    padding: 40px 60px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.308);
+    background-color: #2C537D;
+    justify-content: space-between;
+}
+
+/*nav-menu*/
+ul {
+    list-style: none;
+
+}
+
+/*header*/
+nav {
+    margin: auto;
+    width: 70vw;
+    height: 5vh;
+    border-radius: 80px;
+
+}
+
+/*logo-name*/
+nav h1 {
+    font-size: 3em;
+    float: left;
+    color: rgb(154, 167, 189);
+}
+
+/*nav-menu*/
+nav ul li {
+    float: right;
+}
+
+/*nav-menu*/
+ul li a {
+    color: rgb(154, 167, 189);
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    clear: both;
+}
+
+/*nav-menu*/
+a:hover {
+    color: rgb(185, 200, 226);
+    text-shadow: 0 0 1px black;
+
+}
+
+/*nav-Contact-icon-about-me*/
+.icon-container {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-right: 44px;
+}
+
+/*nav-Contact-icon-about-me*/
+.icon-container img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+/*nav-Contact-icon-about-me*/
+.icon-container img:hover,
+.icon-footer-end img:hover {
+    transform: scale(1.1);
+}
+
+/*main-my-face-and-my-skils*/
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    height: 400px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 90px;
+}
+
+/*hello,I'm*/
+.itme1 .span1 {
+    font-size: 5em;
+}
+
+/*Valera Arnovich*/
+.itme1 .span2,
+.itme1 .span3 {
+    font-size: 2em;
+}
+
+/*my-face*/
+.itme-img img {
+    width: 400px;
+    height: 300px;
+    float: right;
+}
+
+/*line-skils*/
+.icon-line-skils {
+    width: 890px;
+    height: 50px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-radius: 20px;
+    background-color: #966535;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+/*line-skils*/
+.icon-line-skils img {
+    width: 50px;
+}
+
+
+/*about-me*/
+.about-me-box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    margin-top: 500px;
+    padding: 20px;
+    background-color: #27598fab;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-me {
+    font-size: 2em;
+    color: rgb(154, 167, 189);
+    font-weight: bold;
+}
+
+
+.about-span-2,
+.about-span-3,
+.about-span-4 {
+    color: rgb(154, 167, 189);
+    justify-content: space-around;
+    font-size: 1.3em;
+
+}
+
+.my-project-box {
+    display: flex;
+    width: 70vw;
+    height: 50vh;
+    margin-top: 700px;
+    padding: 20px;
+    background-color: #8f2727ab;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Contact-form-box {
+    display: flex;
+    width: 70vw;
+    height: 50vh;
+    margin-top: 900px;
+    padding: 20px;
+    background-color: #ffffffab;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: #203750;
+    color: rgb(154, 167, 189);
+    font-size: 1.2em;
+}
