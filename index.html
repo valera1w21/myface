@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valera arnovich</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="logo/valera1w21.svg">
+</head>
+
+<body>
+    <div class="container" id="menu-home">
+        <div class="up-button"> <!--up-button-->
+            <a href="#menu-home"><img class="button-img" src="images/up-arrow.svg" alt="up-button" loading="lazy"></a>
+        </div>
+        <div class="down-button"> <!--down-button-->
+            <a href="#menu-down"><img class="button-img" src="images/down-arrow.svg" alt="down-button"
+                    loading="lazy"></a>
+        </div>
+
+        <!--menu-of-settings-web-sites-->
+        <a class="button-back-clear" id="lang-toggle">
+            <img class="language-button-img" src="images/language-menu.svg" alt="language menu" loading="lazy">
+        </a>
+
+        <a class="button-back-clear" id="theme-toggle">
+            <img class="modes-theem-button-img" id="theme-icon" src="images/dark-mod.svg" alt="dark-mod" loading="lazy">
+        </a>
+
+        <header><!--header-->
+            <nav>
+                <a href="#"><!--logo-name-->
+                    <h1 data-i18n="nav_portfolio">portfolio</h1>
+                </a>
+
+                <!-- Hamburger menu for mobile -->
+                <a href="javascript:void(0);" class="menu" id="mobile-menu-toggle">
+                    <img src="images/menu-nav.svg" alt="menu-icon">
+                </a>
+
+                <!--nav-menu-->
+                <ul class="nav-links" id="myLinks">
+                    <li><a href="#menu-contact" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="#menu-projects" data-i18n="nav_my_project">My Project</a></li>
+                    <li><a href="#menu-about" data-i18n="nav_about_me">About Me</a></li>
+                    <li><a href="#menu-home" data-i18n="nav_home">Home</a></li>
+                </ul>
+            </nav>
+
+            <div class="icon-container"><!--nav-Contact-icon-about-me-->
+                <a href="#"><img class="instagram" src="images/icons-instagram.svg" alt="icon-instagram"
+                        loading="lazy"></a>
+                <a href="https://github.com/valera1w21"><img class="github" src="images/icons-github.svg"
+                        alt="icon-github" loading="lazy"></a>
+                <a href="#"><img class="telegram" src="images/icons-telegram.svg" alt="icon-telegram"
+                        loading="lazy"></a>
+            </div>
+        </header>
+
+        <section>
+            <main>
+                <div class="flex-container"> <!--main-my-face-and-my-skils-->
+                    <div class="itme itme1">
+                        <span class="span1" data-i18n="hello">hello,I'm</span>
+                        <br>
+                        <span class="span1" data-i18n="name">valera arnovich</span>
+                        <br>
+                        <span class="span2" data-i18n="job1">I'm a Web Engineer and</span>
+                        <br>
+                        <span class="span3" data-i18n="job2">a Flet Engineer</span>
+                    </div>
+                    <div class="itme-img">
+                        <img src="images/IMG_1258.png" alt="my face" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="icon-line-skils"> <!--line-skils-->
+                    <img src="images/html-5-svgrepo-com.svg" alt="icon-html" loading="lazy">
+                    <img src="images/css-3-svgrepo-com.svg" alt="icon-css" loading="lazy">
+                    <img src="images/js-svgrepo-com.svg" alt="icon-js" loading="lazy">
+                    <img src="images/python-svgrepo-com.svg" alt="icon-python" loading="lazy">
+                    <img src="images/flet-logo.svg" alt="icon-flet" loading="lazy">
+                </div>
+
+                <div class="about-me-box" id="menu-about">
+                    <span class="about-me" data-i18n="about_title">About Me:</span>
+                    <span class="about-span-2" data-i18n="about_text_1">I'm 22 years old, currently studying Full Stack
+                        Development at HackerU,
+                        while
+                        actively working with
+                        HTML, CSS,
+                        JavaScript, and Python. I'm especially passionate about building custom interfaces and
+                        desktop/web
+                        applications using
+                        Python and the Flet framework.</span>
+
+                    <span class="about-span-3" data-i18n="about_text_2">
+                        I enjoy digging into deep, complex things — not to make them seem impressive, but because that's
+                        where
+                        the structure and
+                        real understanding begin.
+                        I simplify not to impress, but because it feels natural. If something can be explained clearly,
+                        I’ll
+                        find a way. If a UI
+                        can be more intuitive, I’ll make it so.</span>
+
+                    <span class="about-span-4" data-i18n="about_text_3">
+                        My goal is to create not just working code, but thoughtful, clean, and human-centered solutions
+                        —
+                        products that feel
+                        intentional, logical, and alive.
+                        Open to collaboration — freelance, pet projects, internships. Always looking for meaningful
+                        tasks
+                        where
+                        thinking
+                        matters, honesty is valued, and the human side of developmentisn’t forgotten.</span>
+                </div>
+
+                <div class="my-project-box" id="menu-projects">
+                    <span id="my-project-span" data-i18n="projects_title">My Projects:</span>
+                    <br>
+
+                    <div class="my-project-card">
+                        <img class="img-my-project-1" src="images/3411643.jpg" alt="project-1">
+                        <div class="info">
+                            <span data-i18n="project_1">My first project</span>
+                            <a href="#" class="button-project-1-code">code</a>
+                            <a href="project-food-store/index.html" class=" button-project-1-demo">demo</a>
+                        </div>
+                    </div>
+
+                    <div class="my-project-card">
+                        <img class="img-my-project-2" src="images/pj-store-2.png" alt="project-2">
+                        <div class="info">
+                            <span data-i18n="project_2">small project store minimalist design in Hebrew</span>
+                            <a href="#" class="button-project-2-code">code</a>
+                            <a href="project-store/index.html" class=" button-project-2-demo">demo</a>
+                        </div>
+                    </div>
+
+                    <div class="my-project-card">
+                        <img class="img-my-project-3" src="images/3411643.jpg" alt="project-3">
+                        <div class="info">
+                            <span data-i18n="project_3">My third project</span>
+                            <a href="#" class="button-project-3-code">code</a>
+                            <a href="project-1/index.html" class=" button-project-3-demo">demo</a>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <div class=" Contact-get-in-touch-form-box" id="menu-contact">
+            <form class="Contact-get-in-touch-form">
+                <label for="name" data-i18n="form_name">Name*</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." data-i18n="form_name_in" required>
+
+                <label for=" email" data-i18n="form_email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." data-i18n="form_email_in"
+                    required>
+
+                <label for="message" data-i18n="form_message">Message*</label>
+                <textarea id="message" name="message" placeholder="Write something.." data-i18n="form_message_in"
+                    required></textarea>
+
+                <input type="submit" value="send" id="submit" data-i18n="form_submit">
+
+            </form>
+            <br>
+            <div class="Contact-get-in-touch-form-form-title">
+                <span class="Contact-form-span" data-i18n="contact_title">Contact Me:</span>
+                <span class="Contact-form-span-2" data-i18n="contact_subtext">Feel free to reach out for any inquiries
+                    or collaborations.</span>
+            </div>
+        </div>
+
+
+        <footer id="menu-down">
+            <div class="footer"><!--footer-->
+                <span class="span-footer">© 2023 Valera Arnovich</span>
+                <span class="span-footer-3" data-i18n="footer_rights">All rights reserved</span>
+                <br>
+                <span class="span-footer-2" data-i18n="footer_made">Made with ❤️ by Valera Arnovich</span>
+                <br>
+                <div class="icon-container"><!--nav-Contact-icon-about-me-->
+                    <a href="#"><img class="instagram" src="images/icons-instagram.svg" alt="icon-instagram"></a>
+                    <a href="https://github.com/valera1w21"><img class="github" src="images/icons-github.svg"
+                            alt="icon-github"></a>
+                    <a href="#"><img class="telegram" src="images/icons-telegram.svg" alt="icon-telegram"></a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/script-2.js"></script>
+    </div>
+</body>
+
+</html>
