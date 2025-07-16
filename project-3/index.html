@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="valera1w21.svg">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="logo">Artist<span>Bio</span></h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Say Hi</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </header>
+
+    <section class="hero">
+        <h1>Selected Work</h1>
+        <p>Explore a curated showcase of projects across commercial, food art, installation, large scale, and portrait
+            categories.</p>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="work-card commercial"><img
+                src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=300&h=200"
+                alt="ESPN">
+            <div class="overlay"><span>ESPN</span></div>
+        </div>
+        <div class="work-card food"><img
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=300&h=200"
+                alt="Food Art">
+            <div class="overlay"><span>GRUBHUB</span></div>
+        </div>
+        <div class="work-card installation"><img
+                src="https://videos.openai.com/vg-assets/assets%2Ftask_01k09ez5t1fwa82h0whjtqvqyt%2F1752664431_img_0.webp?st=2025-07-16T09%3A39%3A34Z&se=2025-07-22T10%3A39%3A34Z&sks=b&skt=2025-07-16T09%3A39%3A34Z&ske=2025-07-22T10%3A39%3A34Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=3d249c53-07fa-4ba4-9b65-0bf8eb4ea46a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=rkWJ3Hkc5LG%2FoDnfR4Mcy%2BNez3TR0Q48%2BkgUpDtPDqg%3D&az=oaivgprodscus"
+                alt="Installation">
+            <div class="overlay"><span>MTV</span></div>
+        </div>
+        <div class="work-card large"><img
+                src="https://images.unsplash.com/photo-1506045412240-22980140a405?auto=format&fit=crop&w=300&h=200"
+                alt="Large Scale">
+            <div class="overlay"><span>Specialized</span></div>
+        </div>
+        <div class="work-card portrait"><img
+                src="https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?auto=format&fit=crop&w=300&h=200"
+                alt="Portrait">
+            <div class="overlay"><span>Portrait</span></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="image"><img
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&h=400"
+                alt="Artist Portrait"></div>
+        <div class="text">
+            <h2>About Me</h2>
+            <p>I'm a multidisciplinary artist and creative director based in New York. My work spans from commercial
+                campaigns to large-scale installations.</p>
+            <p>After studying advertising in Texas, I moved to New York to pursue my passion for art and design.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form" id="contact-form">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post">
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" placeholder="Your first name" required>
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" placeholder="Your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message" class="full">Message:</label>
+            <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>Say hi at <a href="mailto:artist@example.com">artist@example.com</a></p>
+        <p>&copy; 2025 Artist Portfolio</p>
+    </footer>
+
+</body>
+
+</html>

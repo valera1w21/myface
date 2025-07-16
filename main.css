@@ -258,6 +258,54 @@ a:hover {
     width: 50px;
 }
 
+/*shh-boom-boom?-*/
+#boom {
+    cursor: pointer;
+}
+
+/*shh-boom-boom?-*/
+.shard {
+    position: absolute;
+    top: 640px;
+    left: 930px;
+    width: 80px;
+    height: 80px;
+    transform: translate(-50%, -50%);
+    animation: shardAnim 1.5s ease-out forwards;
+    pointer-events: none;
+    image-rendering: auto;
+}
+
+@keyframes shardAnim {
+    to {
+        transform:
+            translate(calc(-50% + var(--tx)), calc(-50% + var(--ty))) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/*shh-boom-boom?-*/
+.stick {
+    position: absolute;
+    top: 600px;
+    left: 930px;
+    width: 4px;
+    height: 60px;
+    background: #ffa500;
+    transform-origin: center bottom;
+    transform: translate(-50%, -50%) rotate(var(--angle)) scaleY(0);
+    animation: stickAnim 0.8s ease-out forwards;
+    pointer-events: none;
+}
+
+/*shh-boom-boom?-*/
+@keyframes stickAnim {
+    to {
+        transform:
+            translate(-50%, -50%) rotate(var(--angle)) translateY(-60px) scaleY(1);
+        opacity: 0;
+    }
+}
 
 /*about-me*/
 .about-me-box {

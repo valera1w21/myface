@@ -1,50 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visual Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אומנה נקודה</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="valera1w21.svg">
 </head>
 
-<body class="light-mode">
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">🎨 Artfolio</h1>
-            <button class="theme-toggle" onclick="toggleTheme()">Night</button>
+<body>
+    <div class="topbar">
+        <div>משלוח חינם בישראל</div>
+        <div>תשלום מאובטח</div>
+        <div>מתנות בהזמנה מ-500 ₪</div>
+        <div>תמיכה 24/7</div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt=" Logo">
         </div>
+        <h1>אומנה נקודה</h1>
+        <p>חנויות סמארטפון בישראל</p>
+        <div class="cart-icon">🛒 סל קניות</div>
     </header>
 
-    <main class="main">
-        <section class="gallery-intro">
-            <h2>Explore My Visual Work</h2>
-            <p>Photography, illustrations, and personal creative projects.</p>
-        </section>
+    <nav class="nav">
+        <a href="#oppo">Oppo</a>
+        <a href="#iphone">iPhone</a>
+        <a href="#samsung">Samsung</a>
+    </nav>
 
-        <section class="gallery">
-            <img src="https://source.unsplash.com/random/800x600?art" alt="Artwork 1" />
-            <img src="https://source.unsplash.com/random/801x600?design" alt="Artwork 2" />
-            <img src="https://source.unsplash.com/random/802x600?illustration" alt="Artwork 3" />
-            <img src="https://source.unsplash.com/random/803x600?photography" alt="Artwork 4" />
-            <img src="https://source.unsplash.com/random/804x600?creative" alt="Artwork 5" />
-            <img src="https://source.unsplash.com/random/805x600?gallery" alt="Artwork 6" />
-        </section>
-    </main>
+    <!-- Oppo section with 10 models -->
+    <section id="oppo" class="category">
+        <h3>Oppo</h3>
+        <div class="products">
+            <div class="card">
+                <img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno11-pro-international-2.jpg"
+                    alt="Oppo Reno11 Pro">
+                <h4>Oppo Reno11 Pro</h4>
+                <p>2,999 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <!-- Добавлено для ровной плитки: 10 карточек -->
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno8-pro-1.jpg"
+                    alt="Oppo Reno8 Pro">
+                <h4>Oppo Reno8 Pro</h4>
+                <p>2,499 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-find-x6-pro-1.jpg"
+                    alt="Oppo Find X6 Pro">
+                <h4>Oppo Find X6 Pro</h4>
+                <p>3,999 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-f19-0.jpg" alt="Oppo F19">
+                <h4>Oppo F19</h4>
+                <p>1,599 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-a57-5g-2.jpg" alt="Oppo A57">
+                <h4>Oppo A57</h4>
+                <p>1,049 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-a96-1.jpg" alt="Oppo A96">
+                <h4>Oppo A96</h4>
+                <p>1,899 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-find-x5-pro-1.jpg"
+                    alt="Oppo Find X5 Pro">
+                <h4>Oppo Find X5 Pro</h4>
+                <p>3,899 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-r15-3.jpg" alt="Oppo R15">
+                <h4>Oppo R15</h4>
+                <p>1,799 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-a18-2.jpg" alt="Oppo A18">
+                <h4>Oppo A18</h4>
+                <p>1,299 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno7-4g-2.jpg" alt="Oppo Reno7">
+                <h4>Oppo Reno7</h4>
+                <p>2,199 ₪</p><button>הוסף לקניות</button>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Artfolio. All visuals belong to their creator.</p>
+    <!-- iPhone section with 10 models -->
+    <section id="iphone" class="category">
+        <h3>iPhone</h3>
+        <div class="products">
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg"
+                    alt="iPhone 15 Pro Max">
+                <h4>iPhone 15 Pro Max</h4>
+                <p>5,999 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <!-- Ещё 9 моделей iPhone -->
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-1.jpg"
+                    alt="iPhone 14 Pro">
+                <h4>iPhone 14 Pro</h4>
+                <p>4,999 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-2.jpg" alt="iPhone 13">
+                <h4>iPhone 13</h4>
+                <p>3,499 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-12-2.jpg" alt="iPhone 12">
+                <h4>iPhone 12</h4>
+                <p>2,999 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-se-2022-1.jpg"
+                    alt="iPhone SE (2022)">
+                <h4>iPhone SE (2022)</h4>
+                <p>2,099 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-11-1.jpg" alt="iPhone 11">
+                <h4>iPhone 11</h4>
+                <p>2,499 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-xr-1.jpg" alt="iPhone XR">
+                <h4>iPhone XR</h4>
+                <p>2,199 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-se-1.jpg" alt="iPhone SE">
+                <h4>iPhone SE</h4>
+                <p>1,899 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-plus-1.jpg"
+                    alt="iPhone 14 Plus">
+                <h4>iPhone 14 Plus</h4>
+                <p>3,799 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-mini-2.jpg"
+                    alt="iPhone 13 Mini">
+                <h4>iPhone 13 Mini</h4>
+                <p>2,999 ₪</p><button>הוסף לקניות</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Samsung section with 10 models -->
+    <section id="samsung" class="category">
+        <h3>Samsung</h3>
+        <div class="products">
+            <div class="card"><img
+                    src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s24-ultra-5g-sm-s928-2.jpg"
+                    alt="Galaxy S24 Ultra">
+                <h4>Galaxy S24 Ultra</h4>
+                <p>5,499 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <!-- Ещё 9 моделей Samsung -->
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s23-ultra-5g-3.jpg"
+                    alt="Galaxy S23 Ultra">
+                <h4>Galaxy S23 Ultra</h4>
+                <p>4,999 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s22-5g-4.jpg"
+                    alt="Galaxy S22">
+                <h4>Galaxy S22</h4>
+                <p>3,899 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s21-5g-0.jpg"
+                    alt="Galaxy S21">
+                <h4>Galaxy S21</h4>
+                <p>3,299 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a55-1.jpg"
+                    alt="Galaxy A55">
+                <h4>Galaxy A55</h4>
+                <p>2,199 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a34-6.jpg"
+                    alt="Galaxy A34">
+                <h4>Galaxy A34</h4>
+                <p>1,899 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a14-4g-3.jpg"
+                    alt="Galaxy A14">
+                <h4>Galaxy A14</h4>
+                <p>1,049 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a04-1.jpg"
+                    alt="Galaxy A04">
+                <h4>Galaxy A04</h4>
+                <p>949 ₪</p><button>הוסף לקניות</button>
+            </div>
+            <div class="card"><img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a54-6.jpg"
+                    alt="Galaxy A54">
+                <h4>Galaxy A54</h4>
+                <p>1,799 ₪</p><button>הוסף לקניות</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div><strong>כתובת:</strong>
+                <p>אומנה נקודה בישראל</p>
+                <p>אימייל: contact@okaybuy.in</p>
+                <p>טל': +91 70883 44901</p>
+            </div>
+            <div><strong>מידע:</strong>
+                <ul>
+                    <li><a href="#">אודות</a></li>
+                    <li><a href="#">קריירות</a></li>
+                    <li><a href="#">תנאים ותנאים</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">© 2025 אומנה נקודה - כל הזכויות שמורות</p>
     </footer>
-
-    <script>
-        function toggleTheme() {
-            const body = document.body;
-            const btn = document.querySelector('.theme-toggle');
-            body.classList.toggle('dark-mode');
-            body.classList.toggle('light-mode');
-            btn.textContent = body.classList.contains('dark-mode') ? 'Day' : 'Night';
-        }
-    </script>
 </body>
 
 </html>
