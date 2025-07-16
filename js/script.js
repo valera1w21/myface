@@ -35,3 +35,22 @@ document.getElementById('mobile-menu-toggle').addEventListener('click', function
     }
 });
 
+
+const upBtn = document.getElementById('btn-up');
+const downBtn = document.getElementById('btn-down');
+
+document.addEventListener('DOMContentLoaded', () => {
+    const upBtn = document.getElementById('btn-up');
+    const downBtn = document.getElementById('btn-down');
+
+    upBtn.addEventListener('click', () => {
+        document.getElementById('menu-home')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+
+    downBtn.addEventListener('click', () => {
+        document.getElementById('menu-down')
+            .scrollIntoView({ behavior: 'smooth' });
+    });
+});
+

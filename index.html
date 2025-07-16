@@ -11,22 +11,27 @@
 
 <body>
     <div class="container" id="menu-home">
-        <div class="up-button"> <!--up-button-->
-            <a href="#menu-home"><img class="button-img" src="images/up-arrow.svg" alt="up-button" loading="lazy"></a>
+
+        <div class="up-button" aria-label="Scroll to top">
+            <button id="btn-up" aria-label="Scroll to top">
+                <img class="button-img" src="images/up-arrow.svg" alt="Up arrow" loading="lazy">
+            </button>
         </div>
-        <div class="down-button"> <!--down-button-->
-            <a href="#menu-down"><img class="button-img" src="images/down-arrow.svg" alt="down-button"
-                    loading="lazy"></a>
+
+        <div class="down-button" aria-label="Scroll to bottom">
+            <button id="btn-down" aria-label="Scroll to bottom">
+                <img class="button-img" src="images/down-arrow.svg" alt="Down arrow" loading="lazy">
+            </button>
         </div>
 
         <!--menu-of-settings-web-sites-->
-        <a class="button-back-clear" id="lang-toggle">
+        <button class="btn-lang" id="lang-toggle">
             <img class="language-button-img" src="images/language-menu.svg" alt="language menu" loading="lazy">
-        </a>
+        </button>
 
-        <a class="button-back-clear" id="theme-toggle">
+        <button id="theme-toggle">
             <img class="modes-theem-button-img" id="theme-icon" src="images/dark-mod.svg" alt="dark-mod" loading="lazy">
-        </a>
+        </button>
 
         <header><!--header-->
             <nav>
@@ -46,16 +51,18 @@
                     <li><a href="#menu-about" data-i18n="nav_about_me">About Me</a></li>
                     <li><a href="#menu-home" data-i18n="nav_home">Home</a></li>
                 </ul>
+
+                <!--nav-Contact-icon-of--my--social--media-->
+                <div class="icon-container">
+                    <a href="#"><img class="social-media" src="images/icons-instagram.svg" alt="icon-instagram"
+                            loading="lazy"></a>
+                    <a href="https://github.com/valera1w21"><img class="social-media" src="images/icons-github.svg"
+                            alt="icon-github" loading="lazy"></a>
+                    <a href="#"><img class="social-media" src="images/icons-telegram.svg" alt="icon-telegram"
+                            loading="lazy"></a>
+                </div>
             </nav>
 
-            <div class="icon-container"><!--nav-Contact-icon-about-me-->
-                <a href="#"><img class="instagram" src="images/icons-instagram.svg" alt="icon-instagram"
-                        loading="lazy"></a>
-                <a href="https://github.com/valera1w21"><img class="github" src="images/icons-github.svg"
-                        alt="icon-github" loading="lazy"></a>
-                <a href="#"><img class="telegram" src="images/icons-telegram.svg" alt="icon-telegram"
-                        loading="lazy"></a>
-            </div>
         </header>
 
         <section>
@@ -85,7 +92,8 @@
 
                 <div class="about-me-box" id="menu-about">
                     <span class="about-me" data-i18n="about_title">About Me:</span>
-                    <span class="about-span-2" data-i18n="about_text_1">I'm 22 years old, currently studying Full Stack
+                    <span class="about-span-2" data-i18n="about_text_1">I'm 22 years old, currently studying Full
+                        Stack
                         Development at HackerU,
                         while
                         actively working with
@@ -96,17 +104,20 @@
                         Python and the Flet framework.</span>
 
                     <span class="about-span-3" data-i18n="about_text_2">
-                        I enjoy digging into deep, complex things — not to make them seem impressive, but because that's
+                        I enjoy digging into deep, complex things — not to make them seem impressive, but because
+                        that's
                         where
                         the structure and
                         real understanding begin.
-                        I simplify not to impress, but because it feels natural. If something can be explained clearly,
+                        I simplify not to impress, but because it feels natural. If something can be explained
+                        clearly,
                         I’ll
                         find a way. If a UI
                         can be more intuitive, I’ll make it so.</span>
 
                     <span class="about-span-4" data-i18n="about_text_3">
-                        My goal is to create not just working code, but thoughtful, clean, and human-centered solutions
+                        My goal is to create not just working code, but thoughtful, clean, and human-centered
+                        solutions
                         —
                         products that feel
                         intentional, logical, and alive.
@@ -117,41 +128,51 @@
                         matters, honesty is valued, and the human side of developmentisn’t forgotten.</span>
                 </div>
 
-                <div class="my-project-box" id="menu-projects">
-                    <span id="my-project-span" data-i18n="projects_title">My Projects:</span>
-                    <br>
+                <!--projects-boxs-->
+                <div class="projects-boxs">
 
-                    <div class="my-project-card">
-                        <img class="img-my-project-1" src="images/3411643.jpg" alt="project-1">
+                    <span class="projects-h1-but-span" data-i18n="projects_title">My projects:</span>
+
+                    <div class="projects-card" id="card-1">
+                        <img class="projects-card-img" src="images/pj-store-2.png" alt="projects-card-1" loading="lazy">
                         <div class="info">
-                            <span data-i18n="project_1">My first project</span>
-                            <a href="#" class="button-project-1-code">code</a>
-                            <a href="project-food-store/index.html" class=" button-project-1-demo">demo</a>
+                            <span class="big-card-snap" data-i18n="text_project_repeating_1">My first project</span>
+                            <br>
+                            <span class="small-card-snap" data-i18n="project_1">The burger joint also has a minimalist
+                                design.</span>
+
+                            <a class="button-box-dome" data-i18n="card_project_submit">Dome</a>
                         </div>
                     </div>
 
-                    <div class="my-project-card">
-                        <img class="img-my-project-2" src="images/pj-store-2.png" alt="project-2">
+                    <div class="projects-card" id="card-2">
+                        <img class="projects-card-img" src="" alt="projects-card-2" loading="lazy">
                         <div class="info">
-                            <span data-i18n="project_2">small project store minimalist design in Hebrew</span>
-                            <a href="#" class="button-project-2-code">code</a>
-                            <a href="project-store/index.html" class=" button-project-2-demo">demo</a>
+                            <span class="big-card-snap" data-i18n="text_project_repeating_2">my second project</span>
+                            <br>
+                            <span class="small-card-snap" data-i18n="project_2">Minimalistic design of a small project
+                                store in
+                                Hebrew</span>
+
+                            <a class="button-card-dome" data-i18n="card_project_submit">Dome</a>
                         </div>
                     </div>
 
-                    <div class="my-project-card">
-                        <img class="img-my-project-3" src="images/3411643.jpg" alt="project-3">
+                    <div class="projects-card" id="card-3">
+                        <img class="projects-card-img" src=" " alt="projects-card-3" loading="lazy">
                         <div class="info">
-                            <span data-i18n="project_3">My third project</span>
-                            <a href="#" class="button-project-3-code">code</a>
-                            <a href="project-1/index.html" class=" button-project-3-demo">demo</a>
-                        </div>
+                            <span class="big-card-snap" data-i18n="text_project_repeating_3">My third project</span>
+                            <br>
+                            <span class="small-card-snap" data-i18n="project_3">My third project</span>
 
+                            <a class="button-card-dome" data-i18n="card_project_submit">Dome</a>
+                        </div>
                     </div>
                 </div>
             </main>
         </section>
 
+        <!--Contact-get-in-touch-boxs-->
         <div class=" Contact-get-in-touch-form-box" id="menu-contact">
             <form class="Contact-get-in-touch-form">
                 <label for="name" data-i18n="form_name">Name*</label>
@@ -170,8 +191,9 @@
             </form>
             <br>
             <div class="Contact-get-in-touch-form-form-title">
-                <span class="Contact-form-span" data-i18n="contact_title">Contact Me:</span>
-                <span class="Contact-form-span-2" data-i18n="contact_subtext">Feel free to reach out for any inquiries
+                <span class="Contact-form-span" id="Contact-form-span-1" data-i18n="contact_title">Contact Me:</span>
+                <span class="Contact-form-span" id="Contact-form-span-2" data-i18n="contact_subtext">Feel free to reach
+                    out for any inquiries
                     or collaborations.</span>
             </div>
         </div>
@@ -179,21 +201,25 @@
 
         <footer id="menu-down">
             <div class="footer"><!--footer-->
-                <span class="span-footer">© 2023 Valera Arnovich</span>
-                <span class="span-footer-3" data-i18n="footer_rights">All rights reserved</span>
+                <span class="span-footer" id="span-footer-1">© 2023 Valera Arnovich</span>
+                <span class="span-footer" id="span-footer-3" data-i18n="footer_rights">All rights reserved</span>
                 <br>
-                <span class="span-footer-2" data-i18n="footer_made">Made with ❤️ by Valera Arnovich</span>
+                <span class="span-footer" id="span-footer-2" data-i18n="footer_made">Made with ❤️ by Valera
+                    Arnovich</span>
                 <br>
-                <div class="icon-container"><!--nav-Contact-icon-about-me-->
-                    <a href="#"><img class="instagram" src="images/icons-instagram.svg" alt="icon-instagram"></a>
-                    <a href="https://github.com/valera1w21"><img class="github" src="images/icons-github.svg"
-                            alt="icon-github"></a>
-                    <a href="#"><img class="telegram" src="images/icons-telegram.svg" alt="icon-telegram"></a>
+                <div class="icon-container" id="footer-icon-container">
+                    <a href="#"><img class="social-media" src="images/icons-instagram.svg" alt="icon-instagram"
+                            loading="lazy"></a>
+                    <a href="https://github.com/valera1w21"><img class="social-media" src="images/icons-github.svg"
+                            alt="icon-github" loading="lazy"></a>
+                    <a href="#"><img class="social-media" src="images/icons-telegram.svg" alt="icon-telegram"
+                            loading="lazy"></a>
                 </div>
             </div>
-        </footer>
-        <script src="js/script.js"></script>
-        <script src="js/script-2.js"></script>
+    </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/script-2.js"></script>
     </div>
 </body>
 
